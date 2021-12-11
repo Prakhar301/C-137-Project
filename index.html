@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>C-135,136,137 Project</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body background="background.jpg">
+        <center>
+            <h1 class="btn btn-info hone">
+                <b>AI Object Finder</b>
+                <br>    
+                <label>Note:The input name which you will give should match the names present in CoCo Model then only it will detect</label>
+            </h1>
+            <br>
+            <label>Object Name:</label>
+            <input class="form-control" placeholder="Type the object name here" id="object">
+            <br>
+            <button class="btn btn-success" onclick="start()">Start</button>
+            <br>
+            <h3 class="btn btn-danger" id="status">Status:Initializing Object Detection</h3>
+            <br>
+            <h3 class="btn btn-warning" id="detect"></h3>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
